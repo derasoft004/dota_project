@@ -1,0 +1,676 @@
+/*---(шаблон)---*/
+
+
+body{
+	font-family: 'Raleway';
+	font-size: 16px;
+	margin: 0 auto;
+	padding: 0;
+	background: url(featured.jpg);
+	width: 100%;
+	height: 2000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+ul, li{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*---(/шаблон)---*/
+
+
+/*---(блок header)---*/
+
+header {
+	margin: 0 auto;
+	width: 100%;
+	height: 820px;
+	max-width: 1440px;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.bg_header {
+	background: url(thumb-1920-474206.jpg) no-repeat;
+	background-size: cover;
+	width: 1440px;
+	height: 800px;
+	position: absolute;
+	left: 0px;
+	top: 0;
+
+}
+
+header a{
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 0 5px #fff;
+	transition: color .4s linear;  
+}
+
+header a:hover{
+	color: #ff0000;
+}
+
+/*---контейнер задает рамки блока---*/
+
+.container{ 
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.site_nav {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.site_menu {
+	margin-left: auto;
+	padding: 50px 0px;
+	position: absolute;
+	right: 0px;
+	top: 140px;
+	z-index: 10;
+}
+
+.site_menu li{
+	width: 70px;
+	height: 20px;
+	margin: 70px 0px;
+}
+
+.site_menu li a{
+	text-shadow: 1px 0 5px grey;
+	height: 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: color .4s linear;
+}
+
+.site_menu a:hover{
+	color: #ff0000;
+}
+.site_menu li a hr{
+	background-color: #ff0000;
+	display: block;
+	width: 68px;
+}
+
+.header_nav {
+	display: flex;
+	position: relative;
+	left: -50px;
+	top: 30px;
+}
+
+.header_menu {
+	display: flex;
+}
+
+.header_menu a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	margin: 0px 20px;
+	font-size: 35px;
+
+}
+
+.dota a{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 700;
+	text-shadow: 1px 0 5px gray;
+	color: #fff;
+	font-size: 100px;
+	border-bottom: solid #ff0000 2px;
+	position: absolute;
+	left: 510px;
+	top: 520px;
+}
+
+.creator a {
+	text-transform: uppercase;
+	text-decoration: none;	
+	color: #fff;
+	font-size: 35px;
+	margin: 0px;
+	position: relative;
+	left: 450px;
+	top: 0;
+}
+.creator2 a {
+	text-transform: uppercase;
+	text-decoration: none;	
+	color: #fff;
+	font-size: 15px;
+	margin: 0px;
+	position: relative;
+	left: 450px;
+	top: 0;
+}
+
+
+.header_articles_box_name {
+	position: absolute;
+	left: 300px;
+	top: 810px;
+	color: #fff;
+	font-size: 50px;
+}
+
+.box_names {
+	position: relative;
+	left: 0;
+	top: 0px;
+}
+
+span.articles_box_name1 {
+	width: 650px;
+}
+
+.articles_box_name1 {
+	text-align: top;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 0 5px #fff;
+	transition: opacity .2s, color .2s linear, opacity .2s, text-shadow .2s linear;
+	cursor: pointer;
+	opacity: 1;
+}
+
+span.articles_box_name2 {
+	width: 850px;
+}
+
+.articles_box_name2 {
+	position: absolute;
+	left: -100px;
+	top: 0;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 0 5px #fff;
+	transition: opacity .2s, color .2s linear, opacity .2s, text-shadow .2s linear;
+	cursor: pointer;
+
+	visibility: hidden;
+}
+
+.articles_box_name1:hover,
+.articles_box_name2:hover {
+	text-shadow: 1px 0 15px #fff;
+}
+
+.article_idea {
+	font-size: 12px;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 0 5px #fff;
+	width: 200px;
+}
+
+.header_articles_box {
+	display: flex;
+	position: absolute;
+	left: -180px;
+	top: 70px;
+	z-index: 30;
+	height: 200px;
+	max-height: 200px;
+}
+
+.header_articles1 {
+	display: flex;
+	border: solid #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ff0000;
+	width: 980px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 200px;
+}
+
+.header_articles2 {
+	display: flex;
+	border: solid #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #ff0000;
+	width: 980px;
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	visibility: hidden;
+	height: 200px;
+}
+
+.article {
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.article img {
+	border-radius: 15px;
+	opacity: .75;
+	width: 300px;
+	height: 175px;
+	margin: 15px 10px 0px 15px;
+	transition: opacity .05s linear, width .2s linear, height .2s linear;
+}
+
+.article img:hover {
+	opacity: 1;
+	width: 310px;
+	height: 180px;
+}
+
+.article_title {
+	font-size: 29px;
+	position: absolute;
+	left: 50px;
+	top: 20px;
+	visibility: hidden;
+}
+
+.aegises {
+	display: flex;
+	position: relative;
+	left: -200px;
+	top: 700px;
+}
+
+.aegis1 {
+	position: absolute;
+	left: 1290px;
+	top: 120px;
+	width: 240px;	
+	transition:  width .2s, left .2s;
+}
+
+.aegis1:hover {
+	width: 250px;
+	left: 1285px;
+}
+
+.aegis2 {
+	position: absolute;
+	left: 100px;
+	top: 130px;
+	width: 200px;
+	transition:  width .2s, left .2s;
+}
+
+.aegis2:hover {
+	width: 210px;
+	top: 130px;
+	left: 95px;
+}
+
+/*---(/блок header)---*/
+
+
+/*---(блок main)---*/
+
+.main {
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: 295px 0px 40px 0px;
+	border: none;
+	border-radius: 10px;
+	background-color: #555856;
+	height: 1630px;
+	padding: 20px;
+	width: 99%;
+}
+
+.what_is_it {
+	font-size: 50px;
+	font-weight: 700;
+	margin: 10px;
+}
+
+.main_text {
+	background: url(image-removebg-preview.png) no-repeat;
+	background-size: 900px;
+	font-size: 25px;
+	padding: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 20px;
+	color: #fff;
+	text-shadow: 10px 0 10px black;
+}
+
+.wiki{
+	text-decoration: none;
+	color: #F1A1A0;
+	transition: text-shadow .2s;
+}
+
+.wiki:hover{
+	text-shadow: 2px 0 10px #F1A1A0;
+}
+
+.about_dota {
+	color: #fff;
+}
+
+.gold {
+	color: #EFE200;
+	text-shadow: 5px 0 10px #EFE200;
+}
+
+.red {
+	color: #ff0000;
+	text-shadow: 5px 0 10px #ff0000;
+}
+
+.main_title_articles_title {
+	margin: 15px;
+	font-size: 50px;
+	color: #fff;	
+	position: absolute;
+	left: 50px;
+	top: 560px;
+	font-weight: 700;
+	text-shadow: 10px 0 10px black;
+}
+
+.main_articles {
+	position: relative;
+	left: 0px;
+	top: 620px;
+	display: block;
+	margin: 10px 30px;
+	width: 1130px;
+	height: 1100px;
+	color: black;
+}
+
+.main_articles_two {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 1100px;
+	height: 330px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_article1, 
+.main_article2,
+.main_article3,
+.main_article4,
+.main_article5,
+.main_article6 {
+	width: 530px;
+	height: 310px;
+	transition: width .2s, height .2s, left .2s, top .2s;
+	position: relative;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+.main_article1 img, 
+.main_article2 img,
+.main_article3 img,
+.main_article4 img,
+.main_article5 img,
+.main_article6 img {
+	border-radius: 10px;
+	width: 100%;
+	height: 99%;
+	z-index: 10;
+	border-bottom: solid #fff;
+	transition: .4s;
+}
+
+.red img{
+	border-bottom: solid #ff0000;
+}
+
+.main_article_title1,
+.main_article_title2,
+.main_article_title3,
+.main_article_title4,
+.main_article_title5,
+.main_article_title6 {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 0 5px #fff;
+	transition: color .2s linear;
+	font-size: 20px;
+	position: absolute;
+	left: 30px;
+	top: 230px;
+	z-index: 20;
+	transition: font-size .2s, top .4s;
+}
+
+.bigger {
+	position: absolute;
+	left: 30px;
+	top: 80px;
+	font-size: 30px;
+	z-index: 20;
+}
+
+.main_article_title_text1,
+.main_article_title_text2,
+.main_article_title_text3,
+.main_article_title_text4,
+.main_article_title_text5,
+.main_article_title_text6 {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 0 5px #fff;
+	transition: color .2s linear;
+	font-size: 20px;
+	position: absolute;
+	left: 30px;
+	top: 260px;
+	z-index: 20;
+	transition: font-size .2s, top .3s, opacity .5s;
+	opacity: 0;
+}
+
+.black1,
+.black2,
+.black3,
+.black4,
+.black5,
+.black6 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.main_article_big1,
+.main_article_big2,
+.main_article_big3,
+.main_article_big4,
+.main_article_big5,
+.main_article_big6 {;
+	position: absolute;
+	left: -3000px;
+	top: 0;
+	z-index: 50;
+	opacity: .2;
+	transition: opacity .5s;
+	overflow: hidden;
+	height: 1px;
+}
+
+.main_article_big1 p,
+.main_article_big2 p,
+.main_article_big3 p,
+.main_article_big4 p,
+.main_article_big5 p,
+.main_article_big6 p {
+	background-color: #383535;
+	width: 1200px;
+	border-radius: 10px;
+	font-size: 40px;
+	padding: 50px;
+}
+
+.heroes_a3{
+	background-color: #383535;
+	width: 1200px;
+	border-radius: 10px;
+	font-size: 40px;
+	padding: 50px;
+	color: #fff;
+}
+
+.mabi {
+	width: 900px;
+	margin: 150px;
+	margin-top: 200px;
+}
+
+.mabt {
+	font-size: 60px;
+	color: #fff;
+	text-shadow: 5px 0 10px #fff;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	padding: 50px;
+}
+
+/*---(/блок main)---*/
+
+/*---<footer>---*/
+
+footer {
+	background-color: black;
+	height: 200px;
+}
+
+.footer {
+	transition: opacity .5s;
+}
+
+.footer_container {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.footer_dota {
+	position: absolute;
+	left: 50px;
+	top: 0;
+	font-size: 100px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.fiac {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.footer_icon {
+	position: absolute;
+	left: 30px;
+	top: 65px;
+}
+
+.footer_info {
+	font-size: 20px;
+	color: #fff;
+	text-shadow: 1px 0 5px #fff;
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	width: 500px;
+	margin: 50px 0px;
+}
+
+.creator3 a {
+	text-transform: uppercase;
+	text-shadow: 5px 0 10px #fff;	
+	color: #fff;
+	font-size: 20px;
+	margin: 0px;
+	position: absolute;
+	right: 100px;
+	top: 150px;
+}
+
+.black_background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 49;
+	width: 3000px;
+	height: 5000px;
+	background-color: black;
+	opacity: .5;
+}
+/*---</footer>---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
