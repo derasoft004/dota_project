@@ -1,0 +1,46 @@
+/**1mart**/
+
+main_article.forEach(mart => {
+  mart.addEventListener('mouseover', function() {
+    mart.style.width = '540px';
+    mart.style.height = '320px';
+    main_article_title.forEach(martttl => {
+      martttl.addEventListener('mouseover', function(){
+        martttl.classList.add('bigger');
+      });
+      martttl.addEventListener('mouseout', function (){
+        martttl.classList.remove('bigger');
+      });
+    });
+  });
+  mart.addEventListener('mouseout', function() {
+    mart.style.width = '530px';
+    mart.style.height = '310px';
+    main_article_title.forEach(martttl => {
+      martttl.addEventListener('mouseover', function(){
+        martttl.classList.add('bigger');
+      });
+      martttl.addEventListener('mouseout', function (){
+        martttl.classList.remove('bigger');
+      });
+    });
+  });
+});
+
+для каждого артикля отдельно прописать логику увеличения (разбить по индексам и написать 6 функций)
+
+
+main_article2.forEach(mart => {
+  mart.addEventListener('mouseover', function() {
+    mart.style.width = '540px';
+    mart.style.height = '320px';
+    main_article_title1.classList.add('bigger');
+  });
+  mart.addEventListener('mouseout', function() {
+    mart.style.width = '530px';
+    mart.style.height = '310px';
+    main_article_title1.classList.remove('bigger');
+  });
+});
+
+новая весрия
